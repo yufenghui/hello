@@ -60,9 +60,10 @@ build:
 deploy:
   steps:
     - internal/docker-push:
-        repository: yufenghui/hello
-        username: $DOCKER_USERNAME
-        password: $DOCKER_PASSWORD
-        cmd: /pipeline/source/hello
-        port: "8080"
-        tag: latest
+      registry: https://registry.hub.docker.com
+      repository: yufenghui/hello
+      username: $DOCKER_USERNAME
+      password: $DOCKER_PASSWORD
+      cmd: /pipeline/source/hello
+      port: "8080"
+      tag: latest
