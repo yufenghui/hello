@@ -59,8 +59,8 @@ build:
 
 
 deploy:
- steps:
-   - internal/docker-push:
+  steps:
+    - internal/docker-push:
        username: $DOCKER_USERNAME
        password: $DOCKER_PASSWORD
        cmd: /pipeline/source/hello
