@@ -67,4 +67,3 @@ deploy:
        port: "8080"
        tag: latest
        repository: yufenghui/hello
-       registry: https://registry.hub.docker.com/v2
